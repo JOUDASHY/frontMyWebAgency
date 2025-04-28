@@ -6,54 +6,57 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Thebeast | Web Agency",
+  title: "TheBeast | Agence Web Professionnelle",
   description:
-    "Tolotra – Visionnaire multilingue et spécialiste en communication : éducation, collaboration globale et inter-culturalité.",
+    "TheBeast - Agence web spécialisée dans la création de sites internet, applications web et portfolios professionnels. Solutions digitales sur mesure pour votre entreprise.",
   keywords: [
-    "Tolotra",
-    "Multilingual",
-    "Communication",
-    "Madagascar",
-    "Éducation",
-    "Langues",
-    "Cross-cultural",
+    "Agence web",
+    "Création site internet",
+    "Développement web",
+    "Portfolio professionnel",
+    "Site vitrine",
+    "E-commerce",
+    "Responsive design",
+    "UX/UI design",
+    "SEO",
   ],
-  authors: [{ name: "Tolotra" }],
+  authors: [{ name: "TheBeast Web Agency" }],
   alternates: {
-    canonical: "https://portfolio-tolotra.onrender.com/",
+    canonical: "https://thebeast-webagency.com/",
   },
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "Tolotra | Web Agency",
+    title: "TheBeast | Agence Web Professionnelle",
     description:
-      "Visionnaire multilingue spécialisé en éducation et communication interculturelle à Madagascar.",
-    url: "https://portfolio-tolotra.onrender.com/",
-    siteName: "Tolotra Portfolio",
-    locale: "en_US",
+      "Votre partenaire digital pour la création de sites web, applications et portfolios qui convertissent. Expertise technique et créative au service de votre succès.",
+    url: "https://thebeast-webagency.com/",
+    siteName: "TheBeast Web Agency",
+    locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "https://portfolio-tolotra.onrender.com/cv1.jpeg",
+        url: "https://thebeast-webagency.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Portrait de Tolotra",
+        alt: "TheBeast Web Agency - Création de sites web et portfolios",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tolotra | Communication & Langues",
+    title: "TheBeast | Création de Sites Web & Portfolios",
     description:
-      "Spécialiste multilingue en communication interculturelle et éducation.",
-    images: ["https://portfolio-tolotra.onrender.com/cv2.jpeg"],
-    creator: "@votre_handle",
+      "Agence web spécialisée dans le développement de solutions digitales sur mesure. Transformez votre présence en ligne avec nos experts.",
+    images: ["https://thebeast-webagency.com/twitter-card.jpg"],
+    creator: "@TheBeastAgency",
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -61,7 +64,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         {/* Next.js se charge de vos meta via export const metadata */}
         <meta charSet="utf-8" />
@@ -75,11 +78,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Geist+Mono:wght@400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400&display=swap"
           rel="stylesheet"
         />
 
-        {/* Tailwind CDN (optionnel : mieux de l’installer en prod) */}
+        {/* Tailwind CDN (optionnel : mieux de l'installer en prod) */}
         <script src="https://cdn.tailwindcss.com"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -104,19 +107,37 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Tolotra",
-              birthDate: "2003-12-01",
-              url: "https://portfolio-tolotra.onrender.com/",
+              "@type": "Organization",
+              name: "TheBeast Web Agency",
+              url: "https://thebeast-webagency.com/",
+              logo: "https://thebeast-webagency.com/logo.png",
               sameAs: [
-                "https://www.linkedin.com/in/eddie-tolotra-alitsiry-766050263",
-                "https://www.facebook.com/nirina.sarah.96",
+                "https://www.linkedin.com/company/thebeast-webagency",
+                "https://www.facebook.com/thebeastwebagency",
+                "https://www.instagram.com/thebeastwebagency",
               ],
-              jobTitle: "Communication & Language Specialist",
-              description:
-                "Visionnaire multilingue spécialisé en communication interculturelle et éducation à Madagascar.",
-              nationality: "Madagascar",
-              knowsLanguage: ["fr", "en", "es", "ru"],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+33-1-23-45-67-89",
+                contactType: "customer service",
+                availableLanguage: ["French", "English"],
+              },
+              description: "Agence web spécialisée dans la création de sites internet, applications web et portfolios professionnels.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "123 Avenue Digitale",
+                addressLocality: "Paris",
+                postalCode: "75000",
+                addressCountry: "FR"
+              },
+              services: [
+                "Création de sites web",
+                "Développement d'applications",
+                "Conception de portfolios",
+                "Référencement SEO",
+                "Webdesign",
+                "Maintenance web"
+              ]
             }),
           }}
         />

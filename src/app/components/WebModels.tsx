@@ -7,33 +7,76 @@ const WebModels = () => {
   const websiteModels = [
     {
       id: 1,
-      title: "Site Corporate Élégant",
-      type: "Entreprise",
-      features: ["Landing page animée", "Blog intégré", "Formulaire contact avancé", "SEO optimisé"],
-      image: "/models/corporate.jpg",
+      title: "Site Vitrine Professionnel",
+      type: "Corporate",
+      features: [
+        "Design responsive élégant",
+        "Système de contact avancé",
+        "Gestion des demandes par email",
+        "Blog intégré",
+        "Optimisation SEO"
+      ],
+      image: "https://i.ytimg.com/vi/zJE-ze4TfXc/maxresdefault.jpg",
       demo: "#",
-      price: "À partir de 2 900€",
-      devices: ["desktop", "mobile"]
+      price: "À partir de 100 000 Ar",
+      devices: ["Responsive (tous appareils)"],
     },
     {
       id: 2,
-      title: "E-commerce Premium",
-      type: "Boutique en ligne",
-      features: ["Catalogue produit", "Paiement sécurisé", "Gestion stocks", "Panier persistant"],
-      image: "/models/ecommerce.jpg",
+      title: "Portfolio Minimaliste Moderne",
+      type: "Site Personnel",
+      features: [
+        "Design épuré et responsive",
+        "Animations fluides",
+        "Galerie projets cliquable",
+        "Chargement ultra-rapide"
+      ],
+      image: "https://res2.weblium.site/site/66853dede14182983b202e0f/preview1600_1000",
       demo: "#",
-      price: "À partir de 6 500€",
-      devices: ["desktop", "tablet", "mobile"]
+      code: "#", // Lien vers GitHub si disponible
+      realisation: "2 semaines de développement",
+      price: "À partir de 100 000 Ar",
+      devices: ["Responsive (tous appareils)"],
     },
     {
       id: 3,
-      title: "Portfolio Créatif",
-      type: "Présentation",
-      features: ["Gallerie interactive", "CV visuel", "Effets parallaxe", "Animations sur mesure"],
-      image: "/models/portfolio.jpg",
+      title: "Portfolio Digital Artistique",
+      type: "Créatif",
+      features: ["Parallaxe dynamique", "Gallerie fullscreen", "CV interactif", "Effets visuels avancés"],
+      image: "https://codehalweb.com/wp-content/uploads/2023/05/thumbnail-19-1024x576.jpg",
       demo: "#",
-      price: "À partir de 1 800€",
-      devices: ["desktop", "mobile"]
+      price: "À partir de 100 000 Ar",
+      devices: ["Responsive (tous appareils)"],
+    },
+    {
+      id: 4,
+      title: "Portfolio Minimaliste Élégant",
+      type: "Design épuré",
+      features: ["Navigation fluide", "Typographie moderne", "Animations subtiles", "Optimisation performance"],
+      image: "https://awaikenthemes.com/wp-content/uploads/2019/04/Adzilen-Creative-Portfolio-Template.jpg",
+      demo: "#",
+      price: "À partir de 100 000 Ar",
+      devices: ["Responsive (tous appareils)"],
+    },
+    {
+      id: 5,
+      title: "Site Vitrine Professionnel",
+      type: "Corporate",
+      features: ["Design sur mesure", "Intégration CMS", "SEO avancé", "Responsive adaptatif"],
+      image: "https://cdn.prod.website-files.com/64fa82cbdeed167ebaefef84/64fa86af51d65e51f3ed628e_6037027dfef106e005122a6e_HxufIL8ZWs4zzuH6AASS8C069pS2CtVAR-WOOIS8K_YW4Jsi9eORoqMrm0kKlPWWzXDBPW8g-kjywOhMhdZqGz6zwqigkjKvdV5VrOaLOpNZUhXk5mt1Nvs6ouryZiXG20-tORWk.jpeg",
+      demo: "#",
+      price: "À partir de 100 000 Ar",
+      devices: ["Responsive (tous appareils)"],
+    },
+    {
+      id: 6,
+      title: "Présentation d'Entreprise Premium",
+      type: "Institutionnel",
+      features: ["Brochure digitale", "Organigramme interactif", "Galerie média", "Formulaire de contact intelligent"],
+      image: "https://img.freepik.com/premium-vector/company-profile-brochure-layout-corporate-business-portfolio-template-design_498208-844.jpg?w=1380",
+      demo: "#",
+      price: "À partir de 150 000 Ar",
+      devices: ["Responsive (tous appareils)"],
     }
   ];
 

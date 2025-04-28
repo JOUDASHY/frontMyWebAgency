@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner3 = () => {
-  const backgroundImageUrl = "https://www.hotelmandelberg.fr/wp-content/uploads/2015/08/contact-us-banner.jpg";
+  const backgroundImageUrl = "https://gonnet-imprimeur.com/wp-content/uploads/2018/01/OAYTRW0.jpg";
 
   return (
     <section className="relative h-[30vh] md:h-[40vh] lg:h-[50vh] flex items-center justify-center">

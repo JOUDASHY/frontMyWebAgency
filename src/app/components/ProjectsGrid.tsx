@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Marketplace Éco-responsable",
     type: "Plateforme E-commerce",
-    image: "/pr1.png",
+    image: "/pr6.png",
     tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
     year: "2024",
     location: "Antananarivo",

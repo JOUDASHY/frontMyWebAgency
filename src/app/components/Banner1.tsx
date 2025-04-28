@@ -8,7 +8,7 @@ const Banner1 = () => {
     >
       {/* Arrière-plan technologique */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center"
+        className="absolute inset-0 z-0 bg-cover bg-fixed"
         style={{ 
           backgroundImage: `linear-gradient(to right, rgba(12, 23, 45, 0.9), rgba(8, 37, 103, 0.7)), url(${backgroundImageUrl})`,
           backgroundBlendMode: 'multiply'
@@ -62,7 +62,7 @@ const Banner1 = () => {
             aria-label="Technologies maîtrisées"
           >
             <span className="text-white font-medium text-base sm:text-lg">
-              React • Node.js • WordPress • Shopify
+              React • Node.js • Django • Laravel
             </span>
           </div>
           
