@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -41,12 +42,12 @@ export default function HeroSection() {
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-3 sm:gap-4">
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="btn-jaune px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg font-bold rounded-lg transform hover:scale-105 transition-all"
               >
                 Demander un Devis
-              </a>
+              </Link>
               <a
                 href="#projets"
                 className="btn-blue-ciel px-5 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4 text-sm sm:text-base md:text-lg font-bold rounded-lg transform hover:scale-105 transition-all"

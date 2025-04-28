@@ -1,5 +1,13 @@
+'use client'; // Nécessaire pour les hooks dans le App Router
+
+import Link from 'next/link'; // Solution recommandée
+import { useRouter } from 'next/navigation'; // Si vous avez besoin de useRouter
+
 const Banner1 = () => {
   const backgroundImageUrl = "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80";
+  
+  // Solution alternative avec useRouter (si nécessaire)
+  // const router = useRouter();
 
   return (
     <section 
@@ -66,7 +74,27 @@ const Banner1 = () => {
             </span>
           </div>
           
+          {/* Solution recommandée avec Link */}
+          <Link href="/projects" passHref>
+            <button 
+              className="
+                bg-blue-600 hover:bg-blue-700 text-white 
+                px-8 py-3
+                text-base
+                rounded-full transition-all duration-300 
+                transform hover:scale-105 focus:scale-105
+                animate-fade-in-up-third
+              "
+              aria-label="Voir nos réalisations"
+            >
+              Découvrez Nos Projets
+            </button>
+          </Link>
+
+          {/* Solution alternative avec useRouter (si nécessaire) */}
+          {/*
           <button 
+            onClick={() => router.push('/projects')}
             className="
               bg-blue-600 hover:bg-blue-700 text-white 
               px-8 py-3
@@ -79,29 +107,11 @@ const Banner1 = () => {
           >
             Découvrez Nos Projets
           </button>
-        </div>
-
-        {/* Stats */}
-        <div className="mt-8 sm:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 text-white">
-          <div className="animate-fade-in-up-third">
-            <div className="text-2xl sm:text-3xl font-bold">150+</div>
-            <div className="text-sm">Projets livrés</div>
-          </div>
-          <div className="animate-fade-in-up-third">
-            <div className="text-2xl sm:text-3xl font-bold">98%</div>
-            <div className="text-sm">Satisfaction clients</div>
-          </div>
-          <div className="animate-fade-in-up-third">
-            <div className="text-2xl sm:text-3xl font-bold">12ans</div>
-            <div className="text-sm">D'expérience</div>
-          </div>
-          <div className="animate-fade-in-up-third">
-            <div className="text-2xl sm:text-3xl font-bold">360°</div>
-            <div className="text-sm">Solutions digitales</div>
-          </div>
+          */}
         </div>
       </div>
     </section>
   );
 };
+
 export default Banner1;

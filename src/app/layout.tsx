@@ -1,7 +1,8 @@
 // app/layout.tsx
 import React from "react";
 import type { Metadata } from "next";
-import "./globals.css";           // <-- votre CSS global
+import Script from "next/script";
+import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -66,7 +67,28 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        {/* Next.js se charge de vos meta via export const metadata */}
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-ESLH7743NR`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ESLH7743NR', {
+                page_path: window.location.pathname,
+                anonymize_ip: true,
+                cookie_flags: 'SameSite=None;Secure'
+              });
+            `,
+          }}
+        />
+
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -82,7 +104,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
 
-        {/* Tailwind CDN (optionnel : mieux de l'installer en prod) */}
+        {/* Tailwind CDN */}
         <script src="https://cdn.tailwindcss.com"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -118,17 +140,17 @@ export default function RootLayout({
               ],
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+33-1-23-45-67-89",
+                telephone: "+261348655523",
                 contactType: "customer service",
                 availableLanguage: ["French", "English"],
               },
               description: "Agence web spécialisée dans la création de sites internet, applications web et portfolios professionnels.",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "123 Avenue Digitale",
-                addressLocality: "Paris",
-                postalCode: "75000",
-                addressCountry: "FR"
+                streetAddress: "Fianarantsoa",
+                addressLocality: "Madagascar",
+                postalCode: "301",
+                addressCountry: "MG"
               },
               services: [
                 "Création de sites web",

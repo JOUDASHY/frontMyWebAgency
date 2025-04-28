@@ -47,7 +47,7 @@ const projects = [
 
 export default function ProjectsShowcase() {
   return (
-    <section className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-b from-[var(--light)]/10 to-[var(--blue)]">
+    <section id='projets' className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-b from-[var(--light)]/10 to-[var(--blue)]">
       {/* Éléments de décor */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute w-[300px] sm:w-[400px] md:w-[600px] h-[300px] sm:h-[400px] md:h-[600px] -top-16 sm:-top-24 md:-top-32 -left-16 sm:-left-24 md:-left-32 bg-[var(--jaune)] rounded-full mix-blend-overlay blur-xl sm:blur-2xl md:blur-3xl opacity-20 animate-pulse" />

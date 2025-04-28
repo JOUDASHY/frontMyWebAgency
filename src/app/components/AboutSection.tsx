@@ -142,15 +142,15 @@ const AboutSection = () => {
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">Notre Impact en Chiffres</h2>
             <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
               <div className="py-4 sm:py-6">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">50+</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">10+</div>
                 <div className="text-[var(--light)] text-xs sm:text-sm md:text-base">Projets Livrés</div>
               </div>
               <div className="py-4 sm:py-6 border-x border-[var(--light)]">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">15M+</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">20+</div>
                 <div className="text-[var(--light)] text-xs sm:text-sm md:text-base">Utilisateurs</div>
               </div>
               <div className="py-4 sm:py-6">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">98%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">85%</div>
                 <div className="text-[var(--light)] text-xs sm:text-sm md:text-base">Satisfaction</div>
               </div>
             </div>

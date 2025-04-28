@@ -43,7 +43,7 @@ export default function Contact() {
         alert("Échec : " + json.message);
       }
     } catch {
-      alert("Erreur lors de l’envoi.");
+      alert("Erreur lors de l'envoi.");
     } finally {
       setLoading(false);
     }
@@ -51,7 +51,7 @@ export default function Contact() {
 
   return (
     <section
-      className="relative py-24 bg-light text-black overflow-hidden"
+      className="relative py-12 md:py-24 bg-light text-black overflow-hidden"
       style={{
         backgroundImage: "url('https://img.freepik.com/premium-photo/gold-leaf-pattern-white-background_956920-132597.jpg?w=1380')",
         backgroundSize: "cover",
@@ -84,48 +84,48 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-[var(--blue)]">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-[var(--blue)]">
             Get in Touch
           </h2>
-          <p className="text-gray-700 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
+          <p className="text-gray-700 max-w-2xl mx-auto text-base md:text-lg lg:text-xl leading-relaxed">
             Have a project in mind? Let's create something extraordinary together.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-16 items-start">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 space-y-12"
+            className="lg:col-span-2 space-y-6 md:space-y-12"
           >
-            <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-lg border border-gray-100">
-              <h3 className="text-2xl font-bold mb-8 text-[var(--blue)] relative before:absolute before:-bottom-2 before:left-0 before:w-12 before:h-1 before:bg-[var(--blue-ciel)]">
+            <div className="bg-white/80 backdrop-blur-lg rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+              <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 text-[var(--blue)] relative before:absolute before:-bottom-2 before:left-0 before:w-12 before:h-1 before:bg-[var(--blue-ciel)]">
                 Contact Information
               </h3>
-              <div className="space-y-8">
-                <div className="flex items-start space-x-4 group">
-                  <div className="h-14 w-14 rounded-2xl bg-[var(--blue-ciel)] flex items-center justify-center transition-all duration-300 group-hover:bg-[var(--blue)]">
-                    <HiOutlineLocationMarker className="h-6 w-6 text-black group-hover:text-white transition-colors" />
+              <div className="space-y-6 md:space-y-8">
+                <div className="flex items-start space-x-3 md:space-x-4 group">
+                  <div className="h-10 w-10 md:h-14 md:w-14 rounded-xl md:rounded-2xl bg-[var(--blue-ciel)] flex items-center justify-center transition-all duration-300 group-hover:bg-[var(--blue)]">
+                    <HiOutlineLocationMarker className="h-5 w-5 md:h-6 md:w-6 text-black group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800">Our Location</h4>
-                    <p className="mt-1 text-gray-600">Fianarantsoa, Madagascar</p>
+                    <h4 className="text-base md:text-lg font-medium text-gray-800">Our Location</h4>
+                    <p className="mt-1 text-sm md:text-base text-gray-600">Fianarantsoa, Madagascar</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4 group">
-                  <div className="h-14 w-14 rounded-2xl bg-[var(--blue-ciel)] flex items-center justify-center transition-all duration-300 group-hover:bg-[var(--blue)]">
-                    <HiOutlineMail className="h-6 w-6 text-black group-hover:text-white transition-colors" />
+                <div className="flex items-start space-x-3 md:space-x-4 group">
+                  <div className="h-10 w-10 md:h-14 md:w-14 rounded-xl md:rounded-2xl bg-[var(--blue-ciel)] flex items-center justify-center transition-all duration-300 group-hover:bg-[var(--blue)]">
+                    <HiOutlineMail className="h-5 w-5 md:h-6 md:w-6 text-black group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-medium text-gray-800">Email Us</h4>
+                    <h4 className="text-base md:text-lg font-medium text-gray-800">Email Us</h4>
                     <a
                       href="mailto:contact@thebeast.site"
-                      className="mt-1 text-gray-600 hover:text-[var(--blue)] transition-colors"
+                      className="mt-1 text-sm md:text-base text-gray-600 hover:text-[var(--blue)] transition-colors"
                     >
                       contact@thebeast.site
                     </a>
@@ -134,11 +134,11 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-lg border border-gray-100">
-              <h3 className="text-2xl font-bold mb-8 text-[var(--blue)] relative before:absolute before:-bottom-2 before:left-0 before:w-12 before:h-1 before:bg-[var(--blue-ciel)]">
+            <div className="bg-white/80 backdrop-blur-lg rounded-xl md:rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100">
+              <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 text-[var(--blue)] relative before:absolute before:-bottom-2 before:left-0 before:w-12 before:h-1 before:bg-[var(--blue-ciel)]">
                 Connect With Us
               </h3>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3 md:gap-4">
                 {[
                   { icon: FaFacebookF, color: "#1877F2" },
                   { icon: FaInstagram, color: "#E4405F" },
@@ -150,10 +150,10 @@ export default function Contact() {
                     key={i}
                     href="#"
                     whileHover={{ y: -4 }}
-                    className="h-12 w-12 rounded-xl bg-white flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200"
+                    className="h-10 w-10 md:h-12 md:w-12 rounded-lg md:rounded-xl bg-white flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200"
                     style={{ color }}
                   >
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-4 w-4 md:h-5 md:w-5" />
                   </motion.a>
                 ))}
               </div>
@@ -168,20 +168,20 @@ export default function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-3"
           >
-            <div className="bg-white/90 backdrop-blur-lg rounded-[2rem] p-10 shadow-2xl border border-gray-200 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--blue-ciel)] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
-              <h3 className="text-2xl font-bold mb-8 text-[var(--blue)] relative before:absolute before:-bottom-2 before:left-0 before:w-12 before:h-1 before:bg-[var(--blue-ciel)]">
+            <div className="bg-white/90 backdrop-blur-lg rounded-2xl md:rounded-[2rem] p-6 md:p-10 shadow-xl md:shadow-2xl border border-gray-200 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-[var(--blue-ciel)] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <h3 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 text-[var(--blue)] relative before:absolute before:-bottom-2 before:left-0 before:w-12 before:h-1 before:bg-[var(--blue-ciel)]">
                 Send a Message
               </h3>
 
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <motion.div whileHover={{ scale: 1.02 }} className="relative">
                     <input
                       name="name"
                       type="text"
                       placeholder="Your Name"
-                      className="w-full bg-white border-2 border-gray-200 rounded-xl px-6 py-5 text-gray-800 placeholder-gray-400 focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue-ciel)] transition-all duration-300"
+                      className="w-full bg-white border-2 border-gray-200 rounded-lg md:rounded-xl px-4 py-3 md:px-6 md:py-5 text-sm md:text-base text-gray-800 placeholder-gray-400 focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue-ciel)] transition-all duration-300"
                       required
                     />
                   </motion.div>
@@ -190,7 +190,7 @@ export default function Contact() {
                       name="email"
                       type="email"
                       placeholder="Your Email"
-                      className="w-full bg-white border-2 border-gray-200 rounded-xl px-6 py-5 text-gray-800 placeholder-gray-400 focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue-ciel)] transition-all duration-300"
+                      className="w-full bg-white border-2 border-gray-200 rounded-lg md:rounded-xl px-4 py-3 md:px-6 md:py-5 text-sm md:text-base text-gray-800 placeholder-gray-400 focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue-ciel)] transition-all duration-300"
                       required
                     />
                   </motion.div>
@@ -200,7 +200,7 @@ export default function Contact() {
                     name="message"
                     rows={5}
                     placeholder="Your Message"
-                    className="w-full bg-white border-2 border-gray-200 rounded-xl px-6 py-5 text-gray-800 placeholder-gray-400 focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue-ciel)] transition-all duration-300 resize-none"
+                    className="w-full bg-white border-2 border-gray-200 rounded-lg md:rounded-xl px-4 py-3 md:px-6 md:py-5 text-sm md:text-base text-gray-800 placeholder-gray-400 focus:border-[var(--blue)] focus:ring-2 focus:ring-[var(--blue-ciel)] transition-all duration-300 resize-none"
                     required
                   />
                 </motion.div>
@@ -209,7 +209,7 @@ export default function Contact() {
                   disabled={loading}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-[var(--blue)] hover:bg-opacity-90 text-[var(--blue-ciel)] font-medium py-4 px-6 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 disabled:opacity-70"
+                  className="w-full bg-[var(--blue)] hover:bg-opacity-90 text-[var(--blue-ciel)] font-medium py-3 md:py-4 px-6 rounded-lg md:rounded-xl flex items-center justify-center gap-2 transition-all duration-300 disabled:opacity-70"
                 >
                   {loading ? (
                     <svg className="animate-spin h-5 w-5 text-[var(--blue-ciel)]" viewBox="0 0 24 24">
@@ -222,8 +222,8 @@ export default function Contact() {
                     </svg>
                   ) : (
                     <>
-                      <HiOutlinePaperAirplane className="h-5 w-5 rotate-90 text-[var(--blue-ciel)]" />
-                      <span className="text-[var(--blue-ciel)]">Send Message</span>
+                      <HiOutlinePaperAirplane className="h-4 w-4 md:h-5 md:w-5 rotate-90 text-[var(--blue-ciel)]" />
+                      <span className="text-sm md:text-base text-[var(--blue-ciel)]">Send Message</span>
                     </>
                   )}
                 </motion.button>
@@ -233,10 +233,10 @@ export default function Contact() {
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mt-8 p-6 bg-[var(--blue-ciel)]/10 border-2 border-[var(--blue)] rounded-xl flex items-center backdrop-blur-sm"
+                  className="mt-6 md:mt-8 p-4 md:p-6 bg-[var(--blue-ciel)]/10 border-2 border-[var(--blue)] rounded-lg md:rounded-xl flex items-center backdrop-blur-sm"
                 >
-                  <HiOutlinePaperAirplane className="h-6 w-6 text-[var(--blue)] mr-4 flex-shrink-0" />
-                  <p className="text-[var(--blue)] font-medium">Thank you! Your message has been sent successfully.</p>
+                  <HiOutlinePaperAirplane className="h-5 w-5 md:h-6 md:w-6 text-[var(--blue)] mr-3 md:mr-4 flex-shrink-0" />
+                  <p className="text-sm md:text-base text-[var(--blue)] font-medium">Thank you! Your message has been sent successfully.</p>
                 </motion.div>
               )}
             </div>
