@@ -1,0 +1,23 @@
+name: Deploy React App to Render
+
+on:
+  push:
+    branches: [ main ]  # Déclenchement du workflow sur push vers main
+  pull_request:
+    branches: [ main ]  # Déclenchement sur PR vers main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Récupère le code depuis GitHub
+
+      - name: Trigger Render Deployment
+        run: |
+          curl -X POST "https://api.render.com/v1/services/${{ secrets.MY_RENDER_SERVICE_ID }}/deploys" \
+          -H "Authorization: Bearer ${{ secrets.MY_RENDER_API_KEY }}" \
+          -H "Accept: application/json" \
+          -H "Content-Type: application/json" \
+          -d '{}'

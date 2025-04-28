@@ -1,0 +1,91 @@
+:root {
+  --blue: #000b31;
+  --jaune: #f68c09;
+  --light: #e5ecfb;
+  --blue-ciel: #00d9ff;
+  --secondary-color: #2ecc71;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Backgrounds */
+.bg-blue { background-color: var(--blue)!important; }
+.bg-jaune { background-color: var(--jaune)!important; }
+.bg-blue-ciel { background-color: var(--blue-ciel)!important; }
+
+/* Text colors */
+.color-jaune { color: var(--jaune)!important; }
+.color-blue-ciel { color: var(--blue-ciel)!important; }
+.color-blue { color: var(--blue)!important; }
+
+/* Boutons */
+.btn-blue, .btn-jaune, .btn-blue-ciel {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-blue { background-color: var(--blue)!important; color: white!important; }
+.btn-jaune { background-color: var(--jaune)!important; color: black!important; }
+.btn-blue-ciel { background-color: var(--blue-ciel)!important; color: black!important; }
+
+@media (max-width: 768px) {
+  .btn-blue, .btn-jaune, .btn-blue-ciel {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-blue, .btn-jaune, .btn-blue-ciel {
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+}
+/* Ajouts CSS */
+.bg-light { background-color: var(--light)!important; }
+.color-secondary-color { color: var(--secondary-color)!important; }
+
+.hover\:color-jaune:hover { color: var(--jaune)!important; }
+.hover\:opacity-90:hover { opacity: 0.9; }
+
+.resize-none { resize: none; }
+
+
+
+
+
+/* Floating label animation */
+.relative label {
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+}
+
+.peer:focus ~ label,
+.peer:not(:placeholder-shown) ~ label {
+  transform: translateY(-1.5rem);
+  font-size: 0.875rem;
+}
+
+/* Button hover effect */
+.hover\:scale-\[1\.02\] {
+  transition: transform 0.3s ease;
+}
+
+/* Decorative circles */
+.bg-opacity-20 {
+  background-opacity: 0.2;
+}
+
+/* Success message animation */
+.bg-opacity-10 {
+  background-opacity: 0.1;
+}
