@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner3 = () => {
-  const backgroundImageUrl = "https://i0.wp.com/azlinguistics.com/wp-content/uploads/2021/10/Untitled-800-x-300-px-700-x-300-px-1.png?w=700&ssl=1";
+  const backgroundImageUrl = "https://procreator.design/blog/wp-content/uploads/2025/03/Mobile-app-design-agency-in-USA.png";
 
   return (
     <section className="relative h-[30vh] md:h-[40vh] lg:h-[50vh] flex items-center justify-center">
