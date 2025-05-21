@@ -70,7 +70,7 @@ const Banner1 = () => {
             aria-label="Technologies maîtrisées"
           >
             <span className="text-white font-medium text-base sm:text-lg">
-              React • Node.js • Django • Laravel
+              React • Nextjs • Django • Laravel
             </span>
           </div>
           

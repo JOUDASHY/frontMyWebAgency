@@ -62,7 +62,7 @@ const WebModels = () => {
       id: 5,
       title: "Site Vitrine Professionnel",
       type: "Corporate",
-      features: ["Design sur mesure", "Intégration CMS", "SEO avancé", "Responsive adaptatif"],
+      features: ["Design sur mesure", "SEO avancé", "Responsive adaptatif"],
       image: "https://cdn.prod.website-files.com/64fa82cbdeed167ebaefef84/64fa86af51d65e51f3ed628e_6037027dfef106e005122a6e_HxufIL8ZWs4zzuH6AASS8C069pS2CtVAR-WOOIS8K_YW4Jsi9eORoqMrm0kKlPWWzXDBPW8g-kjywOhMhdZqGz6zwqigkjKvdV5VrOaLOpNZUhXk5mt1Nvs6ouryZiXG20-tORWk.jpeg",
       demo: "#",
       price: "À partir de 100 000 Ar",
@@ -162,7 +162,7 @@ const WebModels = () => {
 
                 {/* Prix et CTA */}
                 <div className="flex justify-between items-center">
-                  <span className="text-sm sm:text-base md:text-lg font-bold text-[var(--blue-ciel)]">{model.price}</span>
+                  {/* <span className="text-sm sm:text-base md:text-lg font-bold text-[var(--blue-ciel)]">{model.price}</span> */}
                   <a 
                     href={model.demo} 
                     className="flex items-center bg-[var(--blue)] text-[var(--light)] px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm hover:bg-[var(--jaune)] transition-colors"

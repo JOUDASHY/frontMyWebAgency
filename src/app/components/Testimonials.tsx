@@ -7,13 +7,13 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       id: 1,
-      name: "Sarah R.",
+      name: "Tolotra N.",
       role: "CEO Tech Startup",
       company: "DigitalBoost MG",
       text: "Notre collaboration avec BEAST a transformé notre présence en ligne. Leur expertise technique et leur approche stratégique ont dépassé nos attentes.",
-      image: "/users/team-1.jpg",
+      image: "/users/CV.png",
       rating: 5,
-      date: "2024-03-15",
+      date: "2025-03-15",
     },
     {
       id: 2,
@@ -23,17 +23,17 @@ const Testimonials = () => {
       text: "Un professionnalisme remarquable. Leur solution e-commerce a augmenté nos ventes de 150% en 6 mois. Vivement recommandé !",
       image: "/users/team-2.jpg",
       rating: 4,
-      date: "2024-02-28",
+      date: "2025-02-28",
     },
     {
       id: 3,
-      name: "Fatima K.",
+      name: "Bruno K.",
       role: "Responsable Communication",
       company: "Tourism MG",
       text: "Site web livré dans les délais avec un design époustouflant. L'équipe est réactive et très à l'écoute de nos besoins.",
-      image: "/users/team-3.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gSxmua_qUTBttCSw_vPsdId-2cePQlhOnA&s",
       rating: 5,
-      date: "2024-04-02",
+      date: "2025-04-02",
     },
   ];
 

@@ -84,10 +84,10 @@ const AboutSection = () => {
                 <ArrowPathIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
                 Technologies Modernes
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <ArrowPathIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
                 Architecture Cloud
-              </li>
+              </li> */}
               <li className="flex items-center">
                 <ArrowPathIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
                 DevOps Avancé
@@ -125,9 +125,7 @@ const AboutSection = () => {
             <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-4 sm:mb-6">
               Accélérez votre croissance grâce à une stratégie numérique intégrée
             </p>
-            <div className="h-24 sm:h-28 md:h-32 bg-gradient-to-r from-[var(--blue)] to-[var(--blue-ciel)] rounded-lg sm:rounded-xl flex items-center justify-center text-white font-bold text-lg sm:text-xl md:text-2xl">
-              +150% ROI
-            </div>
+            
           </motion.div>
         </motion.div>
 

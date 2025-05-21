@@ -61,11 +61,11 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-3">
                 <i className="fas fa-phone text-[var(--jaune)] text-xs sm:text-sm"></i>
-                <a href="tel:+261340000000" className="text-xs sm:text-sm hover:text-[var(--jaune)] transition-colors">+261 34 00 000 00</a>
+                <a href="tel:+261340000000" className="text-xs sm:text-sm hover:text-[var(--jaune)] transition-colors">+261 34 86 555 23</a>
               </div>
               <div className="flex items-center gap-3">
                 <i className="fas fa-envelope text-[var(--jaune)] text-xs sm:text-sm"></i>
-                <a href="mailto:contact@beast-agency.mg" className="text-xs sm:text-sm hover:text-[var(--jaune)] transition-colors">contact@beast-agency.mg</a>
+                <a href="mailto:alitsiryeddynilsen@gmail.com" className="text-xs sm:text-sm hover:text-[var(--jaune)] transition-colors">contact@beast-agency.mg</a>
               </div>
             </div>
 
