@@ -109,9 +109,9 @@ const Testimonials = () => {
                   <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[var(--blue)] mb-1 sm:mb-2">
                     {testimonial.name}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[var(--blue-ciel)] font-medium">
+                  {/* <p className="text-xs sm:text-sm text-[var(--blue-ciel)] font-medium">
                     {testimonial.role} @ {testimonial.company}
-                  </p>
+                  </p> */}
                 </div>
 
                 {/* Étoiles interactives */}
