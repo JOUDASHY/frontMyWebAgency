@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-3">
                 <i className="fas fa-envelope text-[var(--jaune)] text-xs sm:text-sm"></i>
-                <a href="mailto:alitsiryeddynilsen@gmail.com" className="text-xs sm:text-sm hover:text-[var(--jaune)] transition-colors">contact@beast-agency.mg</a>
+                <a href="mailto:alitsiryeddynilsen@gmail.com" className="text-xs sm:text-sm hover:text-[var(--jaune)] transition-colors">alitsiryeddynilsen@gmail.com</a>
               </div>
             </div>
 
