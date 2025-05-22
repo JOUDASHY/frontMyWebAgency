@@ -18,7 +18,7 @@ const projects = [
     title: "Application Tourisme 3.0",
     type: "Mobile First",
     image: "/pr2.png",
-    tech: ["React Native", "Three.js", "AWS"],
+    tech: ["React Native", "AWS"],
     year: "2023",
     location: "Nosy Be",
     description: "Visites virtuelles et réalité augmentée pour les sites historiques"
@@ -28,7 +28,7 @@ const projects = [
     title: "Gestion d'École Digitale",
     type: "SaaS Éducatif",
     image: "/pr3.png",
-    tech: ["Laravel", "Vue.js", "MySQL"],
+    tech: ["Laravel", "Next.js", "MySQL"],
     year: "2024",
     location: "Fianarantsoa",
     description: "Solution complète de gestion scolaire et de e-learning"

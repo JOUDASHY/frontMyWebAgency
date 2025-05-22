@@ -46,7 +46,7 @@ const Banner = () => {
           ">
             <span className="text-white text-lg sm:text-xl md:text-2xl mr-2">🌐</span>
             <span className="text-white font-medium text-sm sm:text-base">
-              React | Vue | Node | Laravel
+              React | Nextjs | Node | Laravel
             </span>
           </div>
           <button className="
